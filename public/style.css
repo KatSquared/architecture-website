@@ -1684,26 +1684,31 @@ img.portfolio__ba {
     width: 100%;
     margin: 0;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
     padding-top: 90px;
     column-gap: 70px;
 }
 
+.portfolio__leading.reverse-column {
+    flex-direction: column-reverse;
+}
 
 .portfolio__leading-col{
-    flex-basis: 40%;
     box-sizing: border-box;
     padding-bottom: 20px;
+    max-width: 600px;
 }
 .portfolio__leading-col h1{
     padding-bottom: 20px;
     line-height: 60px;
+    max-width: 500px;
 }
 .portfolio__leading-img{
-    flex-basis: 60%;
+    height: 300px;
 }
 .leading-img img{
-    width: 100%;
+    height: 300px;
 }
 
 .portfolio__grid {
@@ -1792,40 +1797,90 @@ img.portfolio__ba {
     color: #fff;
 }
 
+@media (min-width: 951px) and (max-width: 1509px){
+ .portfolio__leading {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding-top: 90px;
+        column-gap: 70px;
+    }
+    .portfolio__leading.reverse-column {
+        flex-direction: row;
+    }
+    .portfolio__leading-col{
+        flex-basis: calc(50% - 35px);
+        box-sizing: border-box;
+        padding-bottom: 20px;
+        max-width: none;
+    }
+    .portfolio__leading-col h1{
+        padding-bottom: 20px;
+        line-height: 60px;
+        max-width: none;
+    }
+    .portfolio__leading-img{
+        flex-basis: 50%;
+        height: auto;
+    }
+    .leading-img img{
+        height: 600px;
+        object-fit: cover;
+    }   
+}
+
 @media (min-width: 1510px){  
     .portfolio__grid{
         row-gap: 40px;
         margin-top: 40px;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .portfolio__leading {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding-top: 90px;
+        column-gap: 70px;
+    } 
+    .portfolio__leading.reverse-column {
+        flex-direction: row;
     }
     .portfolio__leading-col{
         flex-basis: 40%;
+        box-sizing: border-box;
+        padding-bottom: 20px;
+        max-width: 600px;
+    }
+    .portfolio__leading-col h1{
+        padding-bottom: 20px;
+        line-height: 60px;
+        max-width: none;
     }
     .portfolio__leading-img{
         flex-basis: 60%;
+        height: auto;
+    }
+    .leading-img img{
+        width: 100%;
+    }
+    .portfolio-item-container {
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
+    .leading-img {
+        height: 100%;
     }
 }
 
-@media (max-width: 1509px){
-    .portfolio__leading-col{
-        flex-basis: calc(50% - 35px);
-    }
-    .portfolio__leading-img{
-        flex-basis: 50%;
-    }
-    .leading-img img {
-        height: 600px;
-        object-fit: cover;
-    }
-}
 
 
 /*-------------- Image preview popup ----------------*/
-
-
-.hidden {
-    display: none;
-    }
-    
 
 .popup-container {
     background-color: rgba(0, 0, 0, 0.35);
@@ -1835,20 +1890,29 @@ img.portfolio__ba {
     height: 100vh;
     width: 100vw;
     z-index: 70;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+    }
+    
 
 .popup-container > * {
     box-sizing: border-box;
 }
 
 .popup-container .flex {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -48%);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    width: max-content;
+    height: max-content;
+    max-height: 85vh;
 }
   
 .popup-container i {
@@ -1856,20 +1920,17 @@ img.portfolio__ba {
     font-size: 1.8rem;
     background-color: rgba(255, 255, 255, 0.35);
     padding: 4px 8px 3px 8px;
+    position: relative;
+    z-index: 50;
 }
 .popup-container i:hover {
     color: var(--hero); 
 }
 
 .englarged-image img{
-    width: 100%;
     object-fit: contain;
     margin-bottom: -4px;
     box-shadow: #000 0px 0px 10px;
-}
-
-@media (min-width: 900px) {
-    .popup-container .flex{
-        padding: 50px;
-    }
+    max-height: 85vh;
+    max-width: 100vw;
 }
