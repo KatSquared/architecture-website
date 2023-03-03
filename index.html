@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <title>Pracownia Projektowa Violet-Arch</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="icon" type="image/x-icon" href="public/images/va-icon.ico">
+    <link rel="stylesheet" href="public/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7195f3535.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="page-background"></div>
+
+<!---------- Shorthand ----------->   
+
+<section class="shorthand">
+    <a href="index.html" style="padding: 0; padding-right: 10px"><img src="public/images/valogo.png"></a>
+    <div class="shorthand-contact">
+        <a href="tel:+48504412332">
+            <i class="fa-solid fa-mobile"></i>+48 504 412 332
+        </a>
+        <a href="91 834 56 78">
+            <i class="fa fa-phone"></i>91 834 56 78
+        </a>
+        <a href="mailto:wioletta.kmita@gmail.com">
+            <i class="fa-solid fa-envelope"></i> wioletta.kmita@gmail.com
+        </a>
+    </div>
+    <div class="shorthand-menu">
+        <div class="shorthand-menu__label">
+            <p>MENU</p>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </div>
+        
+        <div class="menu-links" id="menuLinks"> 
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#landing">STRONA GŁÓWNA</a></li>
+                <li><a href="portfolio.html">PROJEKTY</a></li>
+                <li><a href="#kroki">NASZA OFERTA</a></li>
+                <li><a href="#about">O PRACOWNI</a></li>
+                <li><a href="#testimonials">REFERENCJE</a></li>
+                <li><a href="#kontakt">KONTAKT</a></li>
+            </ul>
+
+            <div class="menu-contact">
+                <a href="tel:+48504412332">
+                    +48 504 412 332
+                <a href="tel:91 834 56 78">
+                    91 834 56 78
+                </a>
+                <a href="mailto:wioletta.kmita@gmail.com">
+                    wioletta.kmita@gmail.com
+                </a>
+            </div>
+
+            <img src="public/images/va-icon-white.png" alt="">
+        </div>
+    </div>
+</section>
+
+
+<!---------- Main ----------->    
+
+<section class="header" id="landing">
+    <div class="text-box">
+        <h1>Pracownia zapewniająca <span style="color: var(--hero);">pełne</span> wsparcie</h1>
+        <h5>Projektujemy budynki typowe i indywidualne, przeprowadzamy 
+            rewitalizacje, opiekujemy się całym procesem 
+            administracyjnym.</h5>
+        <button class="hero-btn" onclick="window.location.href='#oferta';">
+            <a href="#oferta">Poznaj naszą ofertę</a>
+        </button>
+        <br><a href="#oferta"><i class="fa-solid fa-chevron-down" onclick="window.location.href='#oferta';"></i></a>
+    </div>
+    <overlay>.</overlay>
+    <div class="ban1"><img class="ba" src="public/images/banner1.jpg"></div>
+    <div class="ban2"><img class="ba" src="public/images/banner2.jpg"></div>
+    <div class="ban3" ><img class="ba" src="public/images/banner3.jpg"></div>
+    
+    <div class="header__label">
+        <div class="header__label-text">
+            <div class="label1">
+                <p>Dom wielorodzinny "Robert" w Kiczarowie</p>
+                <a href="portfolio.html"> Zobacz projekt</a>
+            </div>
+            <div class="label2">
+                <p>Dom jednorodzinny "Artur" w Kobylance</p>
+            <a href="portfolio.html"> Zobacz projekt</a>
+            </div>
+            <div class="label3">
+                <p>Lokal gastronomiczny w Szczecinie</p>
+            <a href="portfolio.html"> Zobacz projekt</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!---------- Intro + Partnerzy ---------->    
+
+
+
+<section class="partnerzy">
+    <div class="partnerzy-flex">
+        <img src="public/images/pa_1.PNG" alt="">
+        <img src="public/images/pa_2.PNG" alt="">
+        <img src="public/images/pa_3.PNG" alt="">
+        <img src="public/images/pa_4.PNG" alt="">
+        <img src="public/images/pa_5.PNG" alt="">
+        <img src="public/images/pa_6.PNG" alt="">
+        <img src="public/images/pa_7.PNG" alt="">
+        <img src="public/images/pa_8.PNG" alt="">
+        <img src="public/images/pa_9.PNG" alt="">
+        <img src="public/images/pa_10.PNG" alt="">
+        <img src="public/images/pa_11.PNG" alt="">
+        <img src="public/images/pa_12.PNG" alt="">
+    </div>
+</section>
+
+
+
+<!---------- Oferta ---------->
+
+<section class="oferta" id="oferta">
+        <div class="row">
+            <div class="oferta-pic top-pic">
+                <overlay>.</overlay>
+                <img src="public/images/2.jpg">
+            </div>
+            <div class="oferta-desc top-desc">
+                <h3>Budynki<br>mieszkalne</h3>
+                <h5>Projekt domu podstawą dobrego życia.</h5>
+                <p>Bierzemy pod uwagę budżet i wymagania lokalnych planów 
+                    zagospodarowania przestrzennego. Maksymalnie 
+                    dostosowujemy je do wymarzonego obiektu Inwestora, 
+                    działamy tak by spełniać wizje o idealnym komforcie 
+                    zamieszkania.</p>
+                <button class="hero-btn" onclick="window.location.href='portfolio.html';">
+                    <a href="portfolio.html">Zobacz więcej</a>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="oferta-pic bottom-pic">
+                <overlay>.</overlay>
+                <img src="public/images/3.jpg">
+            </div>
+            <div class="oferta-desc bottom-desc">
+                <h3>Budynki<br>komercyjne</h3>
+                <h5>Infrastruktura jako wizytówka.</h5>
+                <p>Po dogłębnym wywiadzie wraz z Inwestorem wybierami takie 
+                    rozwiązania, które są umożliwiają najwyższy komfort życia 
+                    i trwałość inwestycji. Bierzemy pod uwagę budżet 
+                    i wymagania lokalnych planów zagospodarowania przestrzennego.</p>
+                <button class="hero-btn" onclick="window.location.href='portfolio.html';">
+                    <a href="portfolio.html">Zobacz więcej</a>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="oferta-pic top-pic">
+                <overlay>.</overlay>
+                <img src="public/images/2.jpg">
+            </div>
+            <div class="oferta-desc top-desc">
+                <h3>Obiekty<br>przemysłowe</h3>
+                <h5>Solidne i bezpieczne rozwiązania.</h5>
+                <p>Po dogłębnym wywiadzie wraz z Inwestorem wybierami takie 
+                    rozwiązania, które są umożliwiają najwyższy komfort życia 
+                    i trwałość inwestycji. Bierzemy pod uwagę budżet 
+                    i wymagania lokalnych planów zagospodarowania przestrzennego. </p>
+                <button class="hero-btn" onclick="window.location.href='portfolio.html';">
+                    <a href="portfolio.html">Zobacz więcej</a>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="oferta-pic bottom-pic">
+                <overlay>.</overlay>
+                <img src="public/images/3.jpg">
+            </div>
+            <div class="oferta-desc bottom-desc">
+                <h3>Obiekty<br>zabytkowe<br>i rewitalizacje</h3>
+                <h5>Dbamy o tradycję tak jak o nowoczesność.</h5>
+                <p>Po dogłębnym wywiadzie wraz z Inwestorem wybierami takie 
+                    rozwiązania, które są umożliwiają najwyższy komfort 
+                    życia i trwałość inwestycji. Maksymalnie dostosowujemy 
+                    je do wymarzonego obiektu Inwestora.</p>
+                <button class="hero-btn" onclick="window.location.href='portfolio.html';">
+                    <a href="portfolio.html">Zobacz więcej</a>
+                </button>
+            </div>  
+        </div>
+</section>
+
+
+<!-----------Liczby----------->    
+
+
+<section class="liczby">
+    <div class="liczby-label">
+        <h3>Posiadamy ponad:</h3>
+    </div>
+    <div class="liczby-flex">
+        <div class="liczba-container">
+            <h1>26+</h1>
+            <h5>lat doświadczenia<br>w projektowaniu</h5>
+        </div>
+        <div class="liczba-container">
+            <h1>1199+</h1>
+            <h5>wykonanych<br>projektów</h5>
+        </div>
+        <div class="liczba-container">
+            <h1>890+</h1>
+            <h5>zadowolonych<br>klientów</h5>
+        </div>
+</div>
+    
+</section>   
+
+
+
+<!---------- Kroki ---------->
+
+<section class="kroki" id="kroki">
+
+    <div class="grid">
+
+            <div class="label">
+                <h3>Kompleksowa obsługa na każdym etapie</h3>
+                <h5>Przeprowadzamy Inwestora przez każdy etap inwestycji -
+                    od koncepcji, poprzez wymagania prawne, 
+                    po czuwanie nad procecem budowy.</h5>
+            </div>
+
+            <div class="kroki-col col-1">
+                <img src="public/images/dialogue.svg">
+                <div class= "kroki-col-number">
+                    <p>1</p>
+                </div>
+                <div class="layer">
+                </div>
+                <h3>Wasza wizja</h3>
+                <p>Podczas pierwszego darmowego spotkania definiujemy 
+                    podstawowe założenia projektowe<br><br>Zbieramy 
+                    informacje nt. szczegółowych wymogów prawa 
+                    miejscowego na danym terenie<br><br>Przygotowujemy 
+                    koncepcję projektu w oparciu 
+                    o najbardziej optymalne rozwiązania, które pozwolą 
+                    efektywnie zrealizować wizję i cele inwestora.</p>
+            </div>
+            <div class="kroki-col col-2" >
+                <img src="public/images/compass.svg">
+                <div class= "kroki-col-number">
+                    <p>2</p>
+                </div>
+                <div class="layer">
+                </div>
+                <h3>Projektowanie</h3>
+                <p>Jako pełnomocnicy inwestora zajmujemy się 
+                    komunikacją z jednostkami administracyjnymi 
+                i pozyskiwaniem wymaganych dokumentów
+                <br><br>Opracowujemy projekt architektoniczny
+                w programie ArchiCAD, dzięki czemu oferujemy 
+                najwyższą jakość dokumentacji.<br><br>Zlecamy 
+                i nadzorujemy pracę zespołowi zaufanych podwykonawców: 
+                konstruktorów instalatorów branży elektrycznej 
+                i sanitanej, drogowców, geologów, geodetów 
+                i rzeczoznawców</p>
+            </div>
+            <div class="kroki-col col-3">
+                <img src="public/images/house-plan.svg">
+                <div class= "kroki-col-number">
+                    <p>3</p>
+                </div>
+                <div class="layer">
+                </div>
+                <h3>Wsparcie na budowie</h3>
+                <p>Uzyskujemy uzgodnienia umożliwiające 
+                    przystąpienie do robót budowlanych, 
+                m.in. pozwolenie na budowę<br><br>Oferujemy 
+                usługi kosztorysowe, polecamy sprawdzonych przez 
+                nas wykonawców i kierowników robót.<br><br>Oferujemy 
+                doradztwo i czuwamy nad inwestycją przez cały czas 
+                potrzebny do zakończenia robót lub uzyskania 
+                pozwolenia na użytkowanie</p>
+            </div>
+    </div>
+</section>
+
+
+<!---------- O nas ----------->
+
+<section class="onas" id="about">
+    <div class="onas-col">
+        <div class="onas-background"></div>
+        <div class="onas-text">
+            <h1>Autorska<br>pracownia<br>z doświadczeniem</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda necessitatibus nulla mollitia, eligendi impedit, expedita nemo quia magni consequatur fuga quis odit magnam temporibus dolorum modi, accusamus hic exercitationem recusandae?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa consequuntur modi minima ullam, fugit mollitia hic tempora, corrupti soluta cupiditate ad odit temporibus? Laudantium minima neque excepturi dignissimos facere.
+                <br><br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique 
+                suscipit incidunt, laboriosam quod, amet praesentium adipisci natus nam 
+                nesciunt, dolore odit cum eius excepturi quaerat porro ipsam perferendis 
+                nisi velit..
+            </p>
+            <div class="signature">
+                <p>---</p>
+                <img src="public/images/wklogo.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!---------- testimonials ---------->
+
+
+<section class="testimonials" id="testimonials">
+    <div class="testimonials__container">
+        <div class="quote">
+            <p>"</p>
+        </div>
+        <button class="testimonials__button testimonials__button--left ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 281.58 323.93">
+                <defs>
+                    <style>.cls-1{fill:#4bea55;stroke:#4bea55;stroke-miterlimit:10;stroke-width:14px;}</style>
+                </defs>
+                <title>arrow</title>
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_4" data-name="Layer 4">
+                        <polygon class="cls-1" points="14.91 7 143.65 161.97 14.91 316.93 149.91 316.93 272.65 161.97 149.91 7 14.91 7"/>
+                    </g>
+                </g>
+            </svg>
+        </button>
+        <div class="testimonials__track-container">
+            
+
+            <div class="testimonials__track">
+                <div class="testimonials__slide copy-of-three">
+                    <div class="testimonial">
+                        <h3>Rozwój dla twojej firmy</h3> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet 
+                            turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut 
+                            venenatis ex, et dapibus purus.
+                            <br>Consectetur, quas a. Rerum quae, voluptate eos minima aliquam sed, blanditiis 
+                            sit voluptates inventore quisquam esse dolores dignissimos omnis fugit error nesciunt.
+                        </p>
+                        <h5>David Byer<br><span>prezes Polska Firma sp. z o. o.</span></h5>
+                    </div>
+                </div>
+                <div class="testimonials__slide ONE">
+                    <div class="testimonial">
+                        <h3>Spokój ducha</h3> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet 
+                            turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut 
+                            venenatis ex, et dapibus purus.
+                            <br>Consectetur, quas a. Rerum quae, voluptate eos minima aliquam sed, blanditiis 
+                            sit voluptates inventore quisquam esse dolores dignissimos omnis fugit error nesciunt.
+                        </p>
+                        <h5>David Byer<br><span>prezes Polska Firma sp. z o. o.</span></h5>
+                    </div>
+                </div>
+                <div class="testimonials__slide TWO">
+                    <div class="testimonial">
+                        <h3>Nowoczesne podejście</h3> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet 
+                            turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.
+                            <br>Exercitationem quod nesciunt sunt animi blanditiis vitae unde eius quo 
+                            aut, est in tempore dolorem fuga, maxime cumque repellat ratione repellendus deleniti?
+                        </p>
+                        <h5>John Smith<br><span>prezydent miasta Stargard</span></h5> 
+                    </div>
+                </div>
+                <div class="testimonials__slide THREE">
+                    <div class="testimonial">
+                        <h3>Rozwój dla twojej firmy</h3> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet 
+                            turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut 
+                            venenatis ex, et dapibus purus.
+                            <br>Consectetur, quas a. Rerum quae, voluptate eos minima aliquam sed, blanditiis 
+                            sit voluptates inventore quisquam esse dolores dignissimos omnis fugit error nesciunt.
+                        </p>
+                        <h5>David Byer<br><span>prezes Polska Firma sp. z o. o.</span></h5>
+                    </div>
+                </div>
+                <div class="testimonials__slide copy-of-one">
+                    <div class="testimonial">
+                        <h3>Spokój ducha</h3> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet 
+                            turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut 
+                            venenatis ex, et dapibus purus.
+                            <br>Consectetur, quas a. Rerum quae, voluptate eos minima aliquam sed, blanditiis 
+                            sit voluptates inventore quisquam esse dolores dignissimos omnis fugit error nesciunt.
+                        </p>
+                        <h5>David Byer<br><span>prezes Polska Firma sp. z o. o.</span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="testimonials__button testimonials__button--right">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 281.58 323.93">
+                <defs>
+                    <style>.cls-1{fill:#4bea55;stroke:#4bea55;stroke-miterlimit:10;stroke-width:14px;}</style>
+                </defs>
+                <title>arrow</title>
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_4" data-name="Layer 4">
+                        <polygon class="cls-1" points="14.91 7 143.65 161.97 14.91 316.93 149.91 316.93 272.65 161.97 149.91 7 14.91 7"/>
+                    </g>
+                </g>
+            </svg>
+        </button>
+    </div>
+
+    <div class="testimonials__nav">
+        <button class="testimonials__indicator is-hidden"></button>
+        <!-- add more buttons from here -->
+        <button class="testimonials__indicator current-slide"></button>
+        <button class="testimonials__indicator"></button>
+        <button class="testimonials__indicator"></button>
+        <!--- up to there ^ -->
+        <!--- do not add anything before or after the first and last with that "is-hidden" class ^ -->
+        <button class="testimonials__indicator is-hidden"></button>
+    </div>
+</section>
+    
+
+<!------ Contact Form ------>
+
+<section class="contact-form-container">
+    <div class="contact-flex">
+            <img src="public/images/about.jpg" alt="Skontaktuj się z nami.">
+        <div class="contact-form" method="post">
+            <div class="contact-col">
+                <h3>Umów darmowe spotkanie</h3>
+                <form action="src/contact-form-handler.php">
+                    <input type="text" name="name" placeholder="Imię i Nazwisko" required>
+                    <input type="email" name="email" placeholder="Adres e-mail" required>
+                    <input type="tel" name="tel" placeholder="Numer telefonu" required>
+                    <textarea rows="5" name="message" placeholder="Treść zapytania" required></textarea>
+                    <p class="rodo">Zgodnie z art. 13 ust. 1 i ust. 2 Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z 
+                        dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych 
+                        osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE 
+                        (ogólne rozporządzenie o ochronie danych, dalej „RODO”), informujemy, iż: .... Zgadzam się na.</p>
+                    <button type="submit" class="hero-btn"><p>Wyślij zapytanie</p></button>
+                </form>    
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------ Contact Footer ------>
+
+
+<section class="contact-footer" id="kontakt">
+    <div class="contact-footer-col contact-footer-menu">
+        <h5>MENU</h5>
+        <ul class="contact-menu">
+            <li><a href="#landing">Strona główna</a></li>
+            <li><a href="portfolio.html">Projekty</a></li>
+            <li><a href="#kroki">Nasza oferta</a></li>
+            <li><a href="#about">O pracowni</a></li>
+            <li><a href="#testimonials">Referencje</a></li>
+        </ul>
+    </div>
+
+    <div class="contact-footer-col">
+        <h5>Pracownia Projektowa</h5>
+        <ul>
+            <li><i class="fa fa-home"></i><span>Adres:</span>
+                <br>ul. Szczecińska 59<br>73-110 Stargard<br>II Piętro</li>
+            <li><i class="fa-solid fa-business-time"></i><span>Godziny pracy:</span>
+                <br><span>PN-PT: </span>8:00 - 16:00</li>
+        </ul>
+    </div>
+
+    <div class="contact-footer-col dojazd">
+        <h5>Dojazd</h5>
+        <a href="https://goo.gl/maps/rrpUsVMW7rFqGvtt8" target="_blank">
+            <i class="fa-solid fa-location-dot"></i>
+        </a> 
+    </div>
+
+    <div class="contact-footer-col">
+        <h5>Dane kontaktowe</h5>
+        <ul>
+            <li><a href="tel:+48504412332">
+                <i class="fa-solid fa-mobile"></i>+48 504 412 332
+            </li></a>
+            <li><a href="tel:91 834 56 78">
+                <i class="fa fa-phone"></i>91 834 56 78
+            </li></a>
+            <li><a href="mailto:wioletta.kmita@gmail.com">
+                <i class="fa-solid fa-envelope"></i> wioletta.kmita@gmail.com
+            </a></li>
+            <li><span>NIP:</span> 494 495 565 77</li>
+        </ul>
+    </div>
+</section>
+
+
+<section class="footer-credit">
+    <p>Wykonanie: <span style="text-decoration: underline;">Katarzyna Kmita</span></p>
+</section>
+
+  
+<!----JavaScript for toggle menu---->
+<script>
+    const menuLinks = document.getElementById("menuLinks");
+
+    function showMenu() {
+        menuLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        menuLinks.style.right = "-400px";
+    }
+</script> 
+
+
+<!----JavaScript for testimonials carousel---->
+<script src="public/index.js"></script>
+
+    
+
+</body>
+</html>
